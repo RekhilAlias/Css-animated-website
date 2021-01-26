@@ -1,0 +1,140 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ 
+}
+
+body{
+
+  text-align: center;
+  background:linear-gradient(dodgerblue,hotpink,lightgreen);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ 
+ 
+
+}
+
+
+.section{
+
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+.head{
+
+  text-align: center;
+  color: white;
+  opacity: 0.4;
+
+}
+
+
+
+
+#biker{
+  position: relative;
+  top: 16px;
+  margin-left: -200px;
+}
+
+#right-wheel,#left-wheel{
+
+  animation: wheel 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#man-bike{
+
+animation: bike 1s ease-in-out infinite alternate;
+transform-origin: bottom;
+
+}
+
+#hat{
+
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+
+@keyframes wheel{
+
+from{
+
+  transform: rotateZ(0deg);
+}
+
+to{
+
+  transform: rotateZ(360deg);
+}
+
+}
+
+@keyframes bike{
+
+from{
+
+transform: rotateX(0deg);
+}
+
+to{
+
+transform: rotateX(20deg);
+}
+
+}
+
+@keyframes hat {
+
+from{
+
+  transform: translateY(0%);
+
+}
+
+
+to{
+
+  transform: translateY(40%);
+}
+
+}
+
+#main-tree{
+
+text-align: center;
+position: relative;
+right: -800px;
+top: 54px;
+animation: tree 7s ease-in-out infinite ;
+z-index: -4;
+}
+
+
+@keyframes tree {
+
+  from{
+  
+    transform: translateY(0%);
+  
+  }
+  
+  
+  to{
+  
+    transform: translateX(-900%);
+  }
+  
+  }
