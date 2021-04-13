@@ -1,3 +1,3 @@
 # css-animation
-website : https://rekhilalias.github.io/css-animation/
-Css Cycle Animation
+https://rekhilalias.github.io/Css-animated-website/
+Css Cycle Boy Animation
